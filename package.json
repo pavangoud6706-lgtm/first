@@ -1,0 +1,35 @@
+{
+  "name": "skillsprout-learnloop",
+  "version": "2.0.0",
+  "description": "Prerequisite-validated academic roadmap, DAG engine, and Advisor Audit system for SkillSprout",
+  "main": "backend.js",
+  "scripts": {
+    "start": "node backend.js",
+    "dev": "node --watch backend.js",
+    "test": "jest --runInBand --verbose"
+  },
+  "keywords": [
+    "dag",
+    "topological-sort",
+    "roadmap",
+    "express",
+    "sqlite",
+    "zod"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  }
+}
